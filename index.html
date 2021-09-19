@@ -3,32 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable-no, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" type="text/css" media="screen">
     <title>Potrero Cocina</title>
 </head>
 <body>
-    <div class="container">
-        <header class="row">
-            <img class="IconHeader" src="img/icon_cook.png" alt="gorro de chef" width="15%">
-            <h1>Aprendiendo a Cocinar</h1>
+    <div>
+        <header class="header">
+            <div class="logo">
+                <img class="IconHeader" src="img/icon_cook.png" alt="gorro de chef">
+                <h1>Aprendiendo a Cocinar</h1>
+            </div>
+            <nav class="menu">
+                <a href="#">Home</a>
+                <a href="https://cookpad.com/ar" target="_blank">Recetas</a>
+                <a href="contacto.html" target="_blank">Contacto</a>
+            </nav>
         </header>
         <main>
-            <article>
-                <div class="recipe">
-                    <h2>Locro</h2>
-                    <div>
+            <section>
+                <article>
+                    <div class="title-recipe">
+                        <h2>Locro</h2>
+                    </div>
+                    <div class="text-column">
                         <p>
                             El locro nació entre los pueblos Quechuas, llamado como “luqru” o 
                             “rucru”. Era un guiso realizado a base de zapallo, maíz y porotos. 
                             Su origen es precolombino y se lo prepara de varias maneras, según
-                             la tradición de cada una de las provincias argentinas. Lo único 
-                             que no varía es su base vegetal y el procedimiento de cocción, 
-                             que es a fuego lento durante varias horas.
+                            la tradición de cada una de las provincias argentinas. Lo único 
+                            que no varía es su base vegetal y el procedimiento de cocción, 
+                            que es a fuego lento durante varias horas.
                         </p>
-                        <div class="container_map">
-                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26083836.754593752!2d-81.63270780954898!3d-37.05600320152319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses-419!2sar!4v1629853006955!5m2!1ses-419!2sar" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
+                    </div>
+                    <div class="container_map">
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26083836.754593752!2d-81.63270780954898!3d-37.05600320152319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses-419!2sar!4v1629853006955!5m2!1ses-419!2sar" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="text-column">
                         <p>
                             En la antigüedad se usaban pocos ingredientes, pero con el 
                             correr del  tiempo se fueron sumando en algunas zonas el chorizo 
@@ -36,13 +46,17 @@
                             es en ollas populares, fiestas, bares de barrios y, sobre todo, 
                             en las fiestas patrias. 
                         </p>
-                        <p>
-                            Hoy te compartimos como hacerlo
-                        </p>
-                    </div class="container_photo">
-                    <img class="photo_recipe" src="img/Locro.jpg" alt="Locro">
-                    <div>
+                    </div>
+                    <p>
+                        Hoy te compartimos como hacerlo
+                    </p>
+                    <div class="container_photo">
+                        <img class="photo_recipe" src="img/Locro.jpg" alt="Locro">
+                    </div>
+                    <div class="title">
                         <h3>Ingredientes:</h3>
+                    </div>
+                    <div class="u-list">
                         <ul>
                             <li>Aceite de maíz 40 cc</li>
                             <li>Patitas de cerdo 2 kg</li>
@@ -64,10 +78,10 @@
                             <li>Pimienta blanca molida</li>
                         </ul>
                     </div>
-                    <div>
-                        <h3>
-                            Paso a paso
-                        </h3>
+                    <div class="title">
+                        <h3>Paso a paso</h3>
+                    </div>
+                    <div class="o-list">
                         <ol>
                             <li>En una cacerola grande con aceite de maíz empezar a cocinar y dorar a fuego medio las carnes. Incorporar entonces la panceta, la que comenzará al cabo de unos minutos a desprender su grasa y tornarse dorada y crocante. Agregar a continuación la falda cortada en cubos parejos, las patitas de chancho, la carne del chorizo de cerdo y el chorizo colorado cortado en ruedas. Cocinar a fuego moderado durante por lo menos unos 15 minutos y salpimentar con sumo cuidado.</li>
                             <li>Ahora debemos empezar a integrar a nuestro guisado o estofado el maíz y los porotos que habremos dejado en remojo con 8 horas de antelación y a las que les habremos cambiado el agua, por lo menos 3 veces. Agregar entonces los granos de maíz blanco y los porotos pallares, seguir cocinando y revolviendo por unos 5 minutos más.</li>
@@ -76,14 +90,37 @@
                             <li>La cocción de nuestro Locro nos puede llevar entre 2 y 3 horas a fuego suave. Si notan que se evapora demasiado el líquido, es factible agregar más agua, preferentemente caliente, para no bajar la temperatura de cocción. Es importante también, espumar de tanto en tanto. Esto es, quitar y eliminar la espuma que se va formando en la superficie de la preparación.</li>
                             <li>La textura y coloración del guiso estarán dadas por el zapallo, que con tanto tiempo de cocción se desarmará y nos brindará la consistencia característica de este clásico plato. Asimismo, la textura algo densa, estará dada por el almidón que se encuentra en el maíz y los porotos. En definitiva, la preparación finalizada, deberá tener una consistencia ligada o medianamente espesa. Más allá del tiempo indicado, el locro estará listo cuando se deshaga completamente el zapallo, el maíz y los porotos resulten tiernos y asimismo las carnes.</li>
                         </ol>
-                        <p>Te dejamos la video receta de Cocineros Argentinos</p>
                     </div>
-                    <br>
+                    <p>Te dejamos la video receta de Cocineros Argentinos</p>
                     <div class="container_video">
                         <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/iMRPj85CuMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                </div>
-            </article>
+                </article>
+                <aside>
+                    <div class="sidebar1">
+                        <div class="title">
+                            <h2>Recetas Saladas</h2>
+                        </div>
+                        <div class="style-bar">
+                            <a href="#">Pizza</a>
+                            <a href="#">Risotto</a>
+                            <a href="#">Guiso de Lentejas</a>
+                            <a href="#">Empanadas</a>
+                        </div>
+                    </div>
+                    <div class="sidebar2">
+                        <div class="title">
+                            <h2>Recetas Dulces</h2>
+                        </div>
+                        <div class="style-bar">
+                            <a href="#">Tiramisú</a>
+                            <a href="#">Arroz con leche</a>
+                            <a href="#">Chocotorta</a>
+                            <a href="#">Waffles</a>
+                        </div>
+                    </div>
+                </aside>
+            </section>
         </main>
         <footer>
             <p>Ejercicio práctico Nº1 de Frontend en Potrero Digital </p>
