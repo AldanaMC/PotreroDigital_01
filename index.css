@@ -1,0 +1,159 @@
+/* fuentes de la página web y css encabezados*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: beige;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.title-recipe h2 {
+    font-weight:bold;
+    text-decoration: underline;
+    font-size:2em ;
+}
+
+ aside .title h2 {
+    font-size: 1.2em;
+    color: beige;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+ }
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color:#EAFFD0 ;
+    margin: 0;
+    width: 100%;
+    height: auto;
+
+}
+
+
+/* Encabezado logo y menú */
+header {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#FF75A0;
+    margin: 15px 0 15px 0;
+    
+
+}
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .IconHeader {
+            width:100px;
+        }
+    
+    .menu {
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: rgb(0 0 0 / 10%);
+
+    }
+        header nav a {
+            text-decoration: none;
+            margin: 10px;
+            padding: 10px;
+            font-size: 1.5em;
+            color:#f3f3d0;
+            
+        }
+        header nav a:hover {
+            background-color: rgb(0 0 0 / 10%);
+            font-weight: bold;
+            border-radius: 20px;
+        }
+
+/* posicionamiento de lo que contiene el section: article, aside y footer*/
+section {
+    display: flex;
+    width: 100%;
+
+}
+
+    article { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f1a8bf;
+        padding: 40px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    aside {
+        padding:20px;
+        background-color: #e56990;
+        margin: 10px;
+        border-radius:10px;
+    }
+        .style-bar {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+
+        }
+        .style-bar a {
+            text-decoration: none;
+            color:#f3f3d0;
+        }
+        .style-bar a:hover{
+            background-color: rgb(0 0 0 / 10%);
+            font-weight: bold;
+            padding: 10px;
+        }
+
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #95E1D3
+}
+
+/*contenedore de fotos, video y mapa */
+.container_photo {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.photo_recipe {
+    width: 100%;
+    height: auto;
+    border-radius: 1.5em;
+}
+
+.photo_recipe:hover {
+    opacity: .9;
+}
+
+.container_video {
+    margin: 0 auto;
+}
+
+
+.container_map {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+    .map {
+        width:100%;
+    }
+
