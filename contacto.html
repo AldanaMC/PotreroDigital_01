@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css" type="text/css" media="screen">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img class="IconHeader" src="img/icon_cook.png" alt="gorro de chef">
+            <h1>Aprendiendo a Cocinar</h1>
+        </div>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Recetas</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form class="form">
+                <div class="container-name">    
+                    <div class="name-1">
+                        <label for="name">Nombre: </label>
+                        <input id="name" type="text" placeholder="Nombre">
+                    </div>
+                    <div class="name-2">
+                        <label for="lastname">Apellido: </label>
+                        <input id="lastname" type="text" placeholder="Apellido">
+                    </div>
+                </div>
+                <div class="container-contact">
+                    <label for="email">Mail: </label>
+                    <input id="email" type="text" placeholder="usuario@tumail.com">
+                    <label for="message">Dejanos tu mensaje: </label>
+                    <textarea id="message"  type="text" placeholder="Escribenos un mensaje..." maxlength="2200" rows="10" cols="30"></textarea>
+                </div>
+                <input class="button-send" id="submit" type="submit" value="Enviar">
+            </form>
+            <aside>
+                <div class="sidebar1">
+                    <div class="title">
+                        <h2>Recetas Saladas</h2>
+                    </div>
+                    <div class="style-bar">
+                        <a href="#">Pizza</a>
+                        <a href="#">Risotto</a>
+                        <a href="#">Guiso de Lentejas</a>
+                        <a href="#">Empanadas</a>
+                    </div>
+                </div>
+                <div class="sidebar2">
+                    <div class="title">
+                        <h2>Recetas Dulces</h2>
+                    </div>
+                    <div class="style-bar">
+                        <a href="#">Tiramisú</a>
+                        <a href="#">Arroz con leche</a>
+                        <a href="#">Chocotorta</a>
+                        <a href="#">Waffles</a>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <p>Ejercicio práctico Nº1 de Frontend en Potrero Digital </p>
+    </footer>
+</body>
+</html>
