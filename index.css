@@ -144,9 +144,6 @@ footer {
 }
 
 /*contenedore de fotos, video y mapa */
-.container_photo {
-    
-}
 
 .photo_recipe {
     width: 40vw;
@@ -162,12 +159,8 @@ iframe.video {
     height: 40vw;
 }
 
-
-.container_map {
-  
+.map {
+    width: 40vw;
+    height: 40vh;
 }
-    .map {
-        width: 40vw;
-        height: 40vh;
-    }
 
