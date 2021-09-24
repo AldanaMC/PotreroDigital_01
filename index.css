@@ -14,7 +14,7 @@ h2, h3 {
 h1 {
     font-family: 'Bakso Sapi';
     text-align: center;
-    font-size: 3em;
+    font-size: 3.5rem;
     color: beige;
     text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
@@ -37,6 +37,7 @@ body {
     margin: 0;
     width: 100%;
     height: auto;
+    font-size: 1em;
 
 }
 
@@ -80,7 +81,7 @@ header {
             text-decoration: none;
             margin: 10px;
             padding: 10px;
-            font-size: 1.5em;
+            font-size: 1.2em;
             color:#f3f3d0;
             
         }
