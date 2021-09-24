@@ -1,12 +1,18 @@
 /* fuentes de la página web y css encabezados*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-h1, h2, h3 {
+@font-face {
+    font-family: 'Bakso Sapi';
+    src: url(fonts/BaksoSapi.otf)
+    format('opentype');
+}
+h2, h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight:600;
 }
 
 h1 {
+    font-family: 'Bakso Sapi';
     text-align: center;
     font-size: 3em;
     color: beige;
@@ -34,15 +40,18 @@ body {
 
 }
 
+.page {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
 
 /* Encabezado logo y menú */
 header {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-flow: column nowrap;
     background-color:#FF75A0;
     margin: 15px 0 15px 0;
     
@@ -50,7 +59,7 @@ header {
 }
     .logo {
         display: flex;
-        flex-direction: column;
+        flex-flow: column nowrap;
         align-items: center;
     }
         .IconHeader {
@@ -60,6 +69,7 @@ header {
     .menu {
         width:100%;
         display: flex;
+        flex-flow: row wrap;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -84,28 +94,34 @@ header {
 section {
     display: flex;
     width: 100%;
+    flex-flow: row nowrap;
 
 }
 
     article { 
         display: flex;
-        flex-direction: column;
+        flex-flow: column nowrap;
         align-items: center;
+        flex: 4 1 auto;
+        width: 20%;
         background-color: #f1a8bf;
-        padding: 40px;
-        margin: 10px;
-        border-radius: 10px;
+        padding:20px 40px;
+        margin: 10px 0px 10px 10px;
+        border-radius: 20px;
     }
 
     aside {
-        padding:20px;
+        padding: 20px;
         background-color: #e56990;
         margin: 10px;
-        border-radius:10px;
+        border-radius: 20px;
+        flex: 1 1 auto;
+        width: 20%;
+        height: 400px;
     }
         .style-bar {
             display: flex;
-            flex-direction: column;
+            flex-flow: column nowrap;
             text-decoration: none;
 
         }
@@ -129,13 +145,11 @@ footer {
 
 /*contenedore de fotos, video y mapa */
 .container_photo {
-    width: 100%;
-    margin: 0 auto;
+    
 }
 
 .photo_recipe {
-    width: 100%;
-    height: auto;
+    width: 40vw;
     border-radius: 1.5em;
 }
 
@@ -143,17 +157,17 @@ footer {
     opacity: .9;
 }
 
-.container_video {
-    margin: 0 auto;
+iframe.video {
+    width: 40vw;
+    height: 40vw;
 }
 
 
 .container_map {
-    width: 50%;
-    height: auto;
-    margin: 0 auto;
+  
 }
     .map {
-        width:100%;
+        width: 40vw;
+        height: 40vh;
     }
 
