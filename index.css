@@ -33,12 +33,14 @@ h1 {
 
 body {
     font-family: 'Lato', sans-serif;
-    background-color:#EAFFD0 ;
+    background: #fafafa url(img/bg01.png) repeat;
     margin: 0;
     width: 100%;
     height: auto;
     font-size: 1em;
-
+    letter-spacing: 0.5px;
+    word-spacing: 1.5px;
+    line-height: 25px;
 }
 
 .page {
@@ -53,7 +55,7 @@ header {
     display: -ms-flexbox;
     display: flex;
     flex-flow: column nowrap;
-    background-color:#FF75A0;
+    background-color:#C92727;
     margin: 15px 0 15px 0;
     
 
@@ -105,7 +107,8 @@ section {
         align-items: center;
         flex: 4 1 auto;
         width: 20%;
-        background-color: #f1a8bf;
+        background-color: #fafafa;
+        border: 0.05px solid #a9a9a9;
         padding:20px 40px;
         margin: 10px 0px 10px 10px;
         border-radius: 20px;
@@ -113,7 +116,7 @@ section {
 
     aside {
         padding: 20px;
-        background-color: #e56990;
+        background-color: #C92727;
         margin: 10px;
         border-radius: 20px;
         flex: 1 1 auto;
@@ -141,8 +144,23 @@ footer {
     flex-flow: row nowrap;
     padding: 10px 20px;
     margin-top: 10px;
-    background-color: #95E1D3
+    background-color: #160404;
+    color: beige;
+    letter-spacing: 1.5px;
 }
+    button{
+        background: #C92727;
+        color: #fff;
+        border-radius: 8px;
+        padding: 5px 10px;
+        width: 60px;
+        height: 30px;
+        margin: 10px 20px;
+    }
+    button:hover{
+        font-weight: 600;
+        background-color: #aa1f1f;
+    }
 
 /*contenedore de fotos, video y mapa */
 
@@ -165,3 +183,54 @@ iframe.video {
     height: 40vh;
 }
 
+/*breakpoint celular*/
+@media (max-width:575px){
+ 
+    section{
+        flex-flow: column-reverse nowrap;
+    }
+
+    article{
+        width:auto;
+        margin: 10px;
+    }
+
+    aside {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1{
+        line-height: 60px;
+    }
+}
+
+/*Breakpoint tablet*/
+@media (max-width:768px){
+
+    section{
+        flex-flow: column-reverse nowrap;
+    }
+
+    article{
+        width:auto;
+        margin: 10px;
+    }
+
+    aside {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/*Breakpoint para desaparecer h5 en dispositivos de escritorio*/
+@media (min-width:992px){
+    .coment{
+        display:none;
+    }
+}
