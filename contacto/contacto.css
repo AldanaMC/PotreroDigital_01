@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'Bakso Sapi';
-    src: url(fonts/BaksoSapi.otf)
+    src: url(../fonts/BaksoSapi.otf)
     format('opentype');
 }
 
@@ -26,7 +26,7 @@ h1 {
     font-size:2em ;
 }
 
- aside .title h2 {
+aside .title h2 {
     font-size: 1.2em;
     color: beige;
     text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
@@ -34,11 +34,14 @@ h1 {
 
 body {
     font-family: 'Lato', sans-serif;
-    background-color:#EAFFD0 ;
+    background: #fafafa url(../img/bg01.png) repeat;
     margin: 0;
     width: 100%;
     height: auto;
-
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    word-spacing: 1.5px;
+    line-height: 25px;
 }
 /* Encabezado logo y menú */
 
@@ -49,7 +52,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:#FF75A0;
+    background-color:#C92727;
     margin: 15px 0 15px 0;
     
 
@@ -76,7 +79,7 @@ header {
             text-decoration: none;
             margin: 10px;
             padding: 10px;
-            font-size: 1.5em;
+            font-size: 1.2em;
             color:#f3f3d0;
             
         }
@@ -94,7 +97,7 @@ section {
 }
     form.form {
         flex: 3 1 auto;
-        background-color: #f1a8bf;
+        background-color: #fafafa;
         padding: 20px;
         flex-direction: column;
         margin: 10px;
@@ -111,7 +114,7 @@ section {
         }
     aside {
         padding:20px;
-        background-color: #e56990;
+        background-color: #C92727;
         margin: 10px;
         border-radius:10px;
     }
@@ -135,10 +138,25 @@ section {
 footer {
     display: flex;
     flex-flow: row nowrap;
-    padding: 20px 80px;
-    margin-top: 30px;
-    background-color: #95E1D3
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #160404;
+    color: beige;
+    letter-spacing: 1.5px;
 }
+    button{
+        background: #C92727;
+        color: #fff;
+        border-radius: 8px;
+        padding: 5px 10px;
+        width: 60px;
+        height: 30px;
+        margin: 10px 20px;
+    }
+    button:hover{
+        font-weight: 600;
+        background-color: #aa1f1f;
+    }
 
 /*retoques de inputs y labels*/
 label {
@@ -158,13 +176,13 @@ input#submit {
 }
 
 input[type="submit"] {
-    background: #ff75a0;
+    background: #C92727;
     color: #fff;
     border-radius: 8px;
     padding: 5px 10px;
 }
 input[type="submit"]:hover {
-    font-weight: 800;
-    background-color: #b3386ee0;
+    font-weight: 600;
+    background-color: #aa1f1f;
 
 }

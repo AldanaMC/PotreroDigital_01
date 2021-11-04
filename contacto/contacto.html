@@ -5,22 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contacto.css" type="text/css" media="screen">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
     <title>Contacto</title>
 </head>
 <body>
     <header class="header">
+        <!-- Logo de la web -->
         <div class="logo">
-            <img class="IconHeader" src="img/icon_cook.png" alt="gorro de chef">
+            <img class="IconHeader" src="../img/icon_cook.png" alt="gorro de chef">
             <h1>Potrero Cocina</h1>
         </div>
+        <!-- Menú Pricipal -->
         <nav class="menu">
-            <a href="#">Home</a>
-            <a href="#">Recetas</a>
-            <a href="#">Contacto</a>
+            <a href="../index.html">Inicio</a>
+            <a href="../recetas/recipes.html">Recetas</a>
+            <a href="../contacto/contacto.html">Contacto</a>
         </nav>
     </header>
     <main>
         <section>
+            <!-- Formulario de contacto -->
             <form class="form">
                 <div class="container-name">    
                     <div class="name-1">
@@ -40,8 +47,9 @@
                 </div>
                 <input class="button-send" id="submit" type="submit" value="Enviar">
             </form>
+            <!-- Menú aside de recetas -->
             <aside>
-                <div class="sidebar1">
+                <div class="sidebar">
                     <div class="title">
                         <h2>Recetas Saladas</h2>
                     </div>
@@ -52,7 +60,7 @@
                         <a href="#">Empanadas</a>
                     </div>
                 </div>
-                <div class="sidebar2">
+                <div class="sidebar">
                     <div class="title">
                         <h2>Recetas Dulces</h2>
                     </div>
@@ -66,8 +74,11 @@
             </aside>
         </section>
     </main>
+    <script src="../info.js"></script>
     <footer>
         <p>Ejercicio práctico Nº1 de Frontend en Potrero Digital </p>
+        <!--Botón de alert js-->
+        <button onclick="infoWeb()"> Info </button>
     </footer>
 </body>
 </html>
